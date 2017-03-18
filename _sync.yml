@@ -1,0 +1,24 @@
+# SyncSettings
+git:
+  type: git
+  message: [message]
+  github:
+    owner: 'OtherStories'
+    repo: 'website'
+    branch: 'master'
+  bitbucket: <repository url>,[branch]
+  extend_dirs:
+    - [extend directory]
+    - [another extend directory]
+  ignore_hidden:
+    public: false
+ftp:
+  type: ftpsync
+  host: <host>
+  user: <user>
+  pass: <password>
+  remote: [remote]
+  port: [port]
+  ignore: [ignore]
+  connections: [connections]
+  verbose: [true|false]
