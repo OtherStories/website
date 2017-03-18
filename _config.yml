@@ -13,10 +13,6 @@ posts:
   title: Posts
   layout: 'posts'
   output: true
-posts:
-  title: Posts
-  layout: 'posts'
-  output: true
 defaults:
 - scope:
     path: ''
