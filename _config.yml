@@ -1,29 +1,35 @@
----
 title: OtherStories.xyz
 timezone: UTC
 email: your-email@domain.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
+description: >
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
-
-'
 baseurl: ''
 url: ''
 posts:
   title: Posts
-  layout: 'posts'
+  layout: posts
   output: true
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      permalink: '/posts/:title/'
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
 twitter_username: OtherStories
 github_username: OtherStories
+collections:
+  test:
+    title: Test Collection
+    path: test
+    layout: ''
+    permalink: ''
+    date: '2017-03-18T09:00:43.199Z'
+    output: false
